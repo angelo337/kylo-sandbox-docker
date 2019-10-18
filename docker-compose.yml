@@ -118,7 +118,7 @@ services:
     networks:
       - reverse-proxy
     volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:r
+      - /var/run/docker.sock:/tmp/docker.sock:ro
 
   registry:
     image: registry
